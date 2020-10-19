@@ -1,0 +1,11 @@
+name: 'Corpus Migrate'
+description: 'Migrate from source database to destination database'
+type: module
+core: 8.x
+package: 'Corpus'
+version: 8.x-1.0
+dependencies:
+  - user
+  - migrate_plus
+  - migrate_tools
+  - migrate_drupal

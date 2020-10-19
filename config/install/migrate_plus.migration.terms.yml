@@ -1,0 +1,21 @@
+id: terms
+label: Taxonomy terms
+audit: true
+migration_tags:
+  - 'Drupal 8+'
+migration_group: corpus
+source:
+  plugin: d8_taxonomy_term
+process:
+  name: name
+  description/value: description__value
+  description/format: description__format
+  weight: weight
+  parent:
+    plugin: default_value
+    default_value: 0
+    source: '@parent_id'
+  changed: timestamp
+  vid: bundle
+destination:
+  plugin: entity:taxonomy_term

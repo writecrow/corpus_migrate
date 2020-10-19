@@ -1,0 +1,23 @@
+{
+  "name": "writecrow/corpus_migrate",
+  "type": "drupal-module",
+  "description": "Migrate some data from an existing site to a fresh snapshot",
+  "keywords": [
+    "Drupal"
+  ],
+  "license": "GPL-2.0+",
+  "homepage": "https://github.com/writecrow/corpus_migrate",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://github.com/writecrow/corpus_migrate/issues",
+    "source": "https://github.com/writecrow/corpus_migrate"
+  },
+  "require": {
+    "composer/installers": "~1.0",
+    "drupal/migrate_plus": "^5.1",
+    "drupal/migrate_tools": "^5.0"
+  },
+  "config": {
+    "sort-packages": true
+  }
+}
